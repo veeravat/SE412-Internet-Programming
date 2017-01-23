@@ -28,9 +28,11 @@ class content
     function __construct($init) {
         $this->dir = $init;
         list($this->week,$this->name) = explode('.',$init);
-        $this->readdata();
-        $this->printdata();
-        self::$counter++;
+        if($this->readdata()){
+            $this->printdata();
+            self::$counter++;
+        }
+        
     }
 
     
@@ -44,7 +46,11 @@ class content
             if (!feof($handle)) {
                 echo "Error: unexpected fgets() fail\n";
             }
+            return true;
             fclose($handle);
+        }
+        else{
+            return false;
         }
 
     }
