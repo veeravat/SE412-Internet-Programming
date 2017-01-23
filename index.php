@@ -18,11 +18,23 @@
 
     <div class="jumbotron">
         <div class="container">
-            <h1>Welcome to SE412 web portal</h1>
+            <h1>SE412 Internet Programming</h1>
             <p>All content on this site use for education only</p>
         </div>
     </div>
 
+    <div class="container">
+
+    </div>
+    <pre>
+    
+    
+    <?PHP
+    require_once('fn.php');
+
+    $con = connect();
+    ?>
+    </pre>
 </body>
 
 </html>
