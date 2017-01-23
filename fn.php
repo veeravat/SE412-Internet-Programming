@@ -63,7 +63,7 @@ class content
 url=$urlCur/&key=$apiKey&screenshot=true";
         $json = file_get_contents($apiURL);
         $obj = json_decode($json);
-        return $obj;
+        echo $obj;
     }
 
     private function printdata()
