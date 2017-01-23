@@ -19,22 +19,24 @@
     <div class="jumbotron">
         <div class="container">
             <h1>SE412 Internet Programming</h1>
-            <p>All content on this site use for education only</p>
+            <p>All content on this site use for education only</p><br>
+            <a class="btn btn-xl btn-primary" href="https://github.com/veeravat/SE412-Internet-Programming">Project Page</a>
         </div>
     </div>
 
     <div class="container">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
 
+                <?PHP
+                require_once('fn.php');
+                $dirs = array_filter(glob('*'), 'is_dir');
+                $dirs = array_values($dirs);
+                array_walk($dirs,"walkWithContent");
+                ?>
+            </div>
+        </div>
     </div>
-    <pre>
-    
-    
-    <?PHP
-    require_once('fn.php');
-
-    $con = connect();
-    ?>
-    </pre>
 </body>
 
 </html>
