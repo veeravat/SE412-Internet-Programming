@@ -60,7 +60,7 @@ class content
         $apiKey = getenv('PageSpeedAPI');
         $urlCur =  "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
         $apiURL = "https://www.googleapis.com/pagespeedonline/v1/runPagespeed?
-url=$urlCur/&key=$apiKey&screenshot=true";
+url=$urlCur/$this->dir/&key=$apiKey&screenshot=true";
         $json = file_get_contents($apiURL);
         $obj = json_decode($json);
         echo $obj;
