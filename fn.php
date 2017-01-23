@@ -23,10 +23,11 @@ function walkWithContent($value,$key)
 
 class content
 {
-    private $week,$name,$dir,$data;
+    private $week,$name,$dir,$data,$sourceURL;
     private static $counter = 0;
     function __construct($init) {
         $this->dir = $init;
+        $this->sourceURL = "https://github.com/veeravat/SE412-Internet-Programming/tree/master/".$this->dir;
         list($this->week,$this->name) = explode('.',$init);
         if($this->readdata()){
             $this->printdata();
@@ -78,8 +79,12 @@ url=$urlCur/$this->dir/&key=$apiKey&screenshot=true";
       </h4>
     </div>
     <div id="collapse'.self::$counter.'" class="panel-collapse collapse" role="tabpanel" aria-labelledby="'.$this->dir.'">
-      <div class="panel-body">
-            '.$this->data.'<br>
+      <div class="panel-body">  
+            Description : '.$this->data.'<hr>
+            <a href="/'.$this->dir.'" type="button" class="btn btn-warning">Visit site</a>
+            <a href="'.$this->sourceURL.'" type="button" class="btn btn-info">view source</a>
+            
+            <br>
       </div>
     </div>
     ';
