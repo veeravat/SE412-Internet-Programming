@@ -61,6 +61,7 @@ class content
         $urlCur =  "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
         $apiURL = "https://www.googleapis.com/pagespeedonline/v1/runPagespeed?
 url=$urlCur/$this->dir/&key=$apiKey&screenshot=true";
+        
         $json = file_get_contents($apiURL);
         $obj = json_decode($json);
         echo $obj;
@@ -78,7 +79,7 @@ url=$urlCur/$this->dir/&key=$apiKey&screenshot=true";
     </div>
     <div id="collapse'.self::$counter.'" class="panel-collapse collapse" role="tabpanel" aria-labelledby="'.$this->dir.'">
       <div class="panel-body">
-            '.$this->data.'<br>'.$this->getScreenShot().'
+            '.$this->data.'<br>
       </div>
     </div>
     ';
