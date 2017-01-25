@@ -1,0 +1,29 @@
+body {
+    font-family: Garamond;
+}
+
+.header {
+    background-color: #F39;
+    width: 90om;
+    border: 6px solid #e6d45a;
+    padding: 100px;
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.menu {
+    background: lightskyblue;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 6px solid #e6d45a;
+}
+
+.menu:hover {
+    background: red;
+    text-decoration: none;
+    border: 6px solid #e6d45a;
+    border-radius: 28px;
+}
