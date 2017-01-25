@@ -1,2 +1,2 @@
 # In class assignment 
->{detail}
+>{detail} 
