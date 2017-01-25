@@ -1,5 +1,6 @@
 body {
     font-family: Garamond;
+    background-color: #CCFF99;
 }
 
 .header {
@@ -13,12 +14,13 @@ body {
 }
 
 .menu {
-    background: lightskyblue;
+    background: #67c8d7;
     color: #ffffff;
     font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 40px 10px 40px;
     text-decoration: none;
     border: 6px solid #e6d45a;
+    border-radius: 10px;
 }
 
 .menu:hover {
@@ -26,4 +28,44 @@ body {
     text-decoration: none;
     border: 6px solid #e6d45a;
     border-radius: 28px;
+}
+
+.menu:visited {
+    background: pink;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: 6px solid #e6d45a;
+}
+
+.title {
+    background-color: #C99;
+    color: #03F;
+    width: 70%;
+    border: 6px solid #e6d45a;
+    padding: 50px;
+    margin: 70px;
+    align-items: center;
+    text-align: center;
+}
+
+.detail {
+    background-image: url("../bg.jpg");
+    color: #03F;
+    width: 30%;
+    border: 5px solid #e6d45a;
+    padding: 50px;
+    margin: 70px;
+    margin-top: -10px;
+    align-items: center;
+    text-align: center;
+    float: left;
+}
+
+.cc {
+    padding: 50px;
+    margin: 70px;
+    align-items: center;
+    text-align: center;
 }
