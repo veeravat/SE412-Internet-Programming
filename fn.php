@@ -26,14 +26,14 @@ class content
     private $week,$name,$dir,$data,$sourceURL;
     private static $counter = 0;
     function content($init) {
-        $this->dir = $init;
+        $init = explode('wwwroot/',$init);
+        $this->dir = $init[1];
         $this->sourceURL = "https://github.com/veeravat/SE412-Internet-Programming/tree/master/".$this->dir;
-        list($this->week,$this->name) = explode('.',$init);
+        list($this->week,$this->name) = explode('.',$init[1]);
         if($this->readdata()){
             $this->printdata();
             self::$counter++;
         }
-        
     }
 
     
