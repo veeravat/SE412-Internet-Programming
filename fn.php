@@ -1,5 +1,5 @@
 <?PHP 
-
+include('Parsedown.php');
 function connect(){
     $con = new stdClass();
     $connect = getenv('MYSQLCONNSTR_mysqlConnection');
@@ -40,18 +40,13 @@ class content
     
     private function readdata()
     {
-        $handle = @fopen($this->dir."/README.md", "r");
-        if ($handle) {
-            while (($buffer = fgets($handle, 4096)) !== false) {
-                $this->data.=$buffer;
-            }
-            if (!feof($handle)) {
-                echo "Error: unexpected fgets() fail\n";
-            }
+        if(file_exists($this->dir."/README.md")){
+            $contents = file_get_contents($this->dir."/README.md");
+            $Parsedown = new Parsedown();
+            $this->data = $Parsedown->text($contents);
             return true;
-            fclose($handle);
         }
-        else{
+        else {
             return false;
         }
 
