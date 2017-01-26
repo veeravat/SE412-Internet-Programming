@@ -25,7 +25,7 @@ class content
 {
     private $week,$name,$dir,$data,$sourceURL;
     private static $counter = 0;
-    function __construct($init) {
+    function content($init) {
         $this->dir = $init;
         $this->sourceURL = "https://github.com/veeravat/SE412-Internet-Programming/tree/master/".$this->dir;
         list($this->week,$this->name) = explode('.',$init);
