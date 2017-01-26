@@ -28,7 +28,7 @@
 
                 <?PHP
                 require_once('fn.php');
-                $dirs = array_filter(glob('*'), 'is_dir');
+                $dirs = array_filter(glob( '/home/site/wwwroot/*',GLOB_BRACE  ), 'is_dir');               
                 $dirs = array_values($dirs);
                 array_walk($dirs,"walkWithContent");
                 ?>
