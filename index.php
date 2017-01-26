@@ -25,10 +25,9 @@
     <div class="container">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
-
                 <?PHP
                 require_once('fn.php');
-                $dirs = array_filter(glob( '/home/site/wwwroot/*',GLOB_BRACE  ), 'is_dir');               
+                $dirs = array_filter(glob( dirname(__FILE__).'\*',GLOB_BRACE  ), 'is_dir');               
                 $dirs = array_values($dirs);
                 array_walk($dirs,"walkWithContent");
                 ?>

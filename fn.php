@@ -18,7 +18,8 @@ function connect(){
 
 function walkWithContent($value,$key)
 {
-    $content = new content($value);
+    $value = explode(dirname(__FILE__).'\\',$value);
+    $content = new content($value[1]);
 }
 
 class content
@@ -26,10 +27,10 @@ class content
     private $week,$name,$dir,$data,$sourceURL;
     private static $counter = 0;
     function content($init) {
-        $init = explode('wwwroot/',$init);
-        $this->dir = $init[1];
+
+        $this->dir = $init;
         $this->sourceURL = "https://github.com/veeravat/SE412-Internet-Programming/tree/master/".$this->dir;
-        list($this->week,$this->name) = explode('.',$init[1]);
+        list($this->week,$this->name) = explode('.',$init);
         if($this->readdata()){
             $this->printdata();
             self::$counter++;
