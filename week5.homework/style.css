@@ -1,5 +1,154 @@
 .header {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    background: lightgray;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    overflow: hidden;
+    background-color: gray;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li:after {
+    content: " | ";
+    padding: 0 10px;
+}
+
+nav ul li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: darkslategray;
+}
+
+@media only screen and (max-width: 480px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    /* For tablets: */
+    .col-m-1 {
+        width: 8.33%;
+    }
+    .col-m-2 {
+        width: 16.66%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.66%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.66%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.66%;
+    }
+    .col-m-12 {
+        width: 100%;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 721px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
