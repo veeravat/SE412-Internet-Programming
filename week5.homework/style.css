@@ -5,6 +5,14 @@
     background: lightgray;
 }
 
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: snow;
+    background: #3F3F3F;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -151,4 +159,16 @@ img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.blue-bg {
+    margin: 5px;
+    padding: 3px;
+    background: #9CDAEF;
+}
+
+.yellow-bg {
+    margin: 5px;
+    padding: 3px;
+    background: #EEDB7F;
 }
