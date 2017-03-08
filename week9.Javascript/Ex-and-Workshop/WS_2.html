@@ -33,6 +33,7 @@
             display: inline-block;
             width: 350px;
             line-height: 35px;
+            height: 35px;
         }
         
         .inputbox-min {
@@ -43,7 +44,6 @@
         
         .label-radio {
             display: inline-block;
-            background: lightyellow;
             min-height: 80px;
             vertical-align: middle;
         }
@@ -62,8 +62,15 @@
         }
         
         .radio-group {
+            display: block;
+            width: 100%;
             max-height: 200px;
             margin-bottom: 140px;
+        }
+        
+        .areainput {
+            vertical-align: bottom;
+            max-width: 350px;
         }
     </style>
 </head>
@@ -85,11 +92,99 @@
                     <label class="block"><input type="radio" name="year" value="A">ชั้นปีที่ 1</label>
                     <label class="block"><input type="radio" name="year" value="B">ชั้นปีที่ 2</label>
                     <label class="block"><input type="radio" name="year" value="C">ชั้นปีที่ 3</label>
-                    <label class="block"><input type="radio" name="year" value="D">ชั้นปีที่ 4</label>
-                    <label class="block"><input type="radio" name="year" value="D">อื่นๆ</label>
+                    <label class="block"><input type="radio" name="year">ชั้นปีที่ 4</label>
+                    <label class="block"><input type="radio" name="year">อื่นๆ</label>
                 </div>
             </div>
-            <p><a class="label">คณะที่สังกัด</a> <input class="inputbox" type="text" name="" value=""></p>
+            <p><a class="label">คณะที่สังกัด</a> <select class="inputbox">
+                <option value="">คณะเทคโนโลยีสารสนเทศและนวัตกรรม</option>
+                <option value="">คณะบริหารธุรกิจ</option>
+                <option value="">คณะนิเทศศาสตร์</option>
+            </select></p>
+            <p><a class="label2">สาขาวิชาที่สังกัด</a> <input class="inputbox" type="text" name="" value=""></p>
+            <p><a class="label">เพศ </a> <label><input type="radio" name="sex" value="A">ชาย</label>
+                <label><input type="radio" name="sex" value="A">หญิง</label>
+            </p>
+            <p><a class="label2">ที่อยู่</a> <textarea class="inputbox areainput" rows="2" cols="20"></textarea></p>
+
+            <div class="radio-group">
+                <div style="width: 20%; float:left">
+                    <a class="label label-radio">สถานภาพของบิดามารดา </a>
+                </div>
+                <div style="width: 80%; float:right">
+                    <label class="block"><input type="radio" name="pstatus" value="A">โสด</label>
+                    <label class="block"><input type="radio" name="pstatus" value="B">สมรส</label>
+                    <label class="block"><input type="radio" name="pstatus" value="C">หย่าร้าง</label>
+                    <label class="block"><input type="radio" name="pstatus">เสียชีวิต</label>
+                </div>
+            </div>
+
+            <br>
+            <div class="radio-group">
+                <div style="width: 20%; float:left">
+                    <a class="label2 label-radio">การศึกษาสูงสุดของบิดา </a>
+                </div>
+                <div style="width: 80%; float:right">
+                    <label class="block"><input type="radio" name="fgred" value="A">ปริญญาเอก</label>
+                    <label class="block"><input type="radio" name="fgred" value="B">ปริญญาโท</label>
+                    <label class="block"><input type="radio" name="fgred" value="C">ปริญญาตรี</label>
+                    <label class="block"><input type="radio" name="fgred">อื่นๆ</label>
+                </div>
+            </div>
+            <br>
+            <div class="radio-group">
+                <div style="width: 20%; float:left">
+                    <a class="label label-radio">การศึกษาสูงสุดของมารดา </a>
+                </div>
+                <div style="width: 80%; float:right">
+                    <label class="block"><input type="radio" name="mgred" value="A">ปริญญาเอก</label>
+                    <label class="block"><input type="radio" name="mgred" value="B">ปริญญาโท</label>
+                    <label class="block"><input type="radio" name="mgred" value="C">ปริญญาตรี</label>
+                    <label class="block"><input type="radio" name="mgred">อื่นๆ</label>
+                </div>
+            </div>
+            <br>
+            <div class="radio-group">
+                <div style="width: 20%; float:left">
+                    <a class="label2 label-radio">อาชีพของบิดา </a>
+                </div>
+                <div style="width: 80%; float:right">
+                    <label class="block"><input type="checkbox" name="vehicle" value="Bike"> พนักงานบริษัท</label>
+                    <label class="block"><input type="checkbox" name="vehicle" value="Bike"> รับราชการ</label>
+                    <label class="block"><input type="checkbox" name="vehicle" value="Bike"> อาจารย์</label>
+                    <label class="block"><input type="checkbox" name="vehicle" value="Bike"> ธุรกิจส่วนตัว</label>
+                    <label class="block"><input type="checkbox" name="vehicle" value="Bike"> อื่นๆ</label>
+                </div>
+            </div>
+            <br>
+            <div class="radio-group">
+                <div style="width: 20%; float:left">
+                    <a class="label label-radio">อาชีพของมารดา </a>
+                </div>
+                <div style="width: 80%; float:right">
+                    <label class="block"><input type="checkbox" name="vehicle" value="Bike"> พนักงานบริษัท</label>
+                    <label class="block"><input type="checkbox" name="vehicle" value="Bike"> รับราชการ</label>
+                    <label class="block"><input type="checkbox" name="vehicle" value="Bike"> อาจารย์</label>
+                    <label class="block"><input type="checkbox" name="vehicle" value="Bike"> ธุรกิจส่วนตัว</label>
+                    <label class="block"><input type="checkbox" name="vehicle" value="Bike"> อื่นๆ</label>
+                </div>
+            </div>
+            <br>
+            <p><a class="label2">รายได้เฉลี่ยรวม</a> <input class="inputbox" type="text" name="" value="" style="width: 250px;"> บาท / ต่อเดือน</p>
+            <br>
+            <div class="radio-group">
+                <div style="width: 20%; float:left">
+                    <a class="label label-radio">ที่พักอาศัยปัจจุบัน </a>
+                </div>
+                <div style="width: 80%; float:right">
+                    <label class="block"><input type="radio" name="home" value="A">บ้านเดี่ยว</label>
+                    <label class="block"><input type="radio" name="home" value="B">ทาวน์เฮาส์</label>
+                    <label class="block"><input type="radio" name="home" value="C">คอนโดมิเนียม</label>
+                    <label class="block"><input type="radio" name="home">ห้องเช่า</label>
+                    <label class="block"><input type="radio" name="home">อาศัยอยู่กับญาติ</label>
+                </div>
+            </div>
+            <p><a class="label2">หมายเหตุ</a> <textarea class="inputbox areainput" rows="4" cols="20"></textarea></p>
 
         </form>
     </div>
