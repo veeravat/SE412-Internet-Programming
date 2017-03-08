@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .form {
+            background: lightskyblue;
+            padding: 20px;
+            width: 500px;
+            margin: 0 auto;
+        }
+        
+        .label {
+            display: inline-block;
+            background: azure;
+            padding: 10px;
+            margin-right: 20px;
+            min-width: 200px;
+        }
+        
+        .inputbox {
+            display: inline-block;
+            width: 250px;
+            line-height: 35px;
+        }
+        
+        .Textlabel {
+            display: inline-block;
+            width: 100%;
+            line-height: 60px;
+            text-align: center;
+            background: navajowhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <h1>My Form</h1>
+        <form action="" method="GET">
+            <p><a class="label">เลขประจำตัวประชาชน 13 หลัก</a> <input class="inputbox" type="number" name="nationalid" value=""></p>
+            <p><a class="label">ชื่อ</a> <input class="inputbox" type="text" name="name" value=""></p>
+            <p><a class="label">ที่อยู่</a> <input class="inputbox" type="text" name="address" value=""></p>
+            <p><a class="label">สถานะ</a> <input type="radio" name="status" value="">โสด <input type="radio" name="status" value="">สมรส <input type="radio" name="status" value="">หย่าร้าง </p>
+            <p><a class="label">รายได้เฉลี่ยต่อเดือน</a> <input class="inputbox" type="number" name="salary" value=""></p>
+            <p class="Textlabel">การคำนวณภาษี</p>
+            <p><a class="label">เงินเดือน ค่าจ้าง บำนาญ ฯลฯ</a> <input class="inputbox" type="number" name="tax1" value=""></p>
+            <p><a class="label">หัก ค่าใช้จ่ายตลอดปี</a> <input class="inputbox" type="number" name="tax2" value=""></p>
+            <p><a class="label">ภาษีเงินได้หัก ณ ที่จ่าย</a> <input class="inputbox" type="number" name="tax3" value=""></p>
+            <p><a class="label">เงินได้สุทธิ</a> <input class="inputbox" type="number" name="tax4" value=""></p>
+            <p class="Textlabel"><button type="button" onclick="alert('Data must be filled out.')">คำนวณเงินได้</button></p>
+
+        </form>
+    </div>
+</body>
+
+</html>
