@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Display the result here.</p>
+
+<script>
+function myFunction(name) {
+    return "Hello " + name;
+}
+</script>
+
+</body>
+</html>

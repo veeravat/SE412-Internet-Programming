@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<p id="name">Display your name</p>
+<p id="code">Display your student id</p>
+<p id="age">Display your age</p>
+
+<script>
+function myFunction() {
+    // Add code here
+}
+document.getElementById("demo").innerHTML = myFunction();
+</script>
+
+</body>
+</html>

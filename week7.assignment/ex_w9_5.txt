@@ -1,0 +1,12 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Display the result here.</p>
+
+<script>
+// Define and call the function here
+</script>
+
+</body>
+</html>
