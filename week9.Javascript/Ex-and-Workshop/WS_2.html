@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>veeravat jeensuksang</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .form {
+            background: lightskyblue;
+            padding: 20px;
+            width: 600px;
+            margin: 0 auto;
+        }
+        
+        .label {
+            display: inline-block;
+            background: azure;
+            padding: 10px;
+            margin-right: 20px;
+            min-width: 200px;
+        }
+        
+        .label2 {
+            display: inline-block;
+            background: lightyellow;
+            padding: 10px;
+            margin-right: 20px;
+            min-width: 200px;
+        }
+        
+        .inputbox {
+            display: inline-block;
+            width: 350px;
+            line-height: 35px;
+        }
+        
+        .inputbox-min {
+            display: inline-block;
+            width: 20px;
+            line-height: 35px;
+        }
+        
+        .label-radio {
+            display: inline-block;
+            background: lightyellow;
+            min-height: 80px;
+            vertical-align: middle;
+        }
+        
+        .Textlabel {
+            display: inline-block;
+            width: 100%;
+            line-height: 60px;
+            text-align: center;
+            background: navajowhite;
+        }
+        
+        .block {
+            display: block;
+            margin-left: 120px;
+        }
+        
+        .radio-group {
+            max-height: 200px;
+            margin-bottom: 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <h1 style="text-align: center">แบบสอบถามข้อมูลส่วนตัว</h1>
+        <form action="" method="GET">
+            <p><a class="label">ชื่อ - นามสกุล</a> <input class="inputbox" type="text" name="" value=""></p>
+            <p><a class="label2">(Name in English)</a> <input class="inputbox" type="text" name="" value=""></p>
+            <p><a class="label">รหัสนักศึกษา</a> <input class="inputbox-min" type="text" name="" value="" maxlength="1"> - <input class="inputbox-min" type="text" name="" value="" maxlength="1"> <input class="inputbox-min" type="text" name="" value="" maxlength="1">                - <input class="inputbox-min" type="text" name="" value="" maxlength="1"> <input class="inputbox-min" type="text" name="" value="" maxlength="1"> - <input class="inputbox-min" type="text" name="" value="" maxlength="1"> <input class="inputbox-min"
+                    type="text" name="" value="" maxlength="1"> <input class="inputbox-min" type="text" name="" value="" maxlength="1"> <input class="inputbox-min" type="text" name="" value="" maxlength="1"> - <input class="inputbox-min" type="text" name=""
+                    value="" maxlength="1"> </p>
+            <div class="radio-group">
+                <div style="width: 20%; float:left">
+                    <a class="label2 label-radio">ชั้นปี </a>
+                </div>
+                <div style="width: 80%; float:right">
+                    <label class="block"><input type="radio" name="year" value="A">ชั้นปีที่ 1</label>
+                    <label class="block"><input type="radio" name="year" value="B">ชั้นปีที่ 2</label>
+                    <label class="block"><input type="radio" name="year" value="C">ชั้นปีที่ 3</label>
+                    <label class="block"><input type="radio" name="year" value="D">ชั้นปีที่ 4</label>
+                    <label class="block"><input type="radio" name="year" value="D">อื่นๆ</label>
+                </div>
+            </div>
+            <p><a class="label">คณะที่สังกัด</a> <input class="inputbox" type="text" name="" value=""></p>
+
+        </form>
+    </div>
+</body>
+
+</html>
