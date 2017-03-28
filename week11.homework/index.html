@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 11</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .spacing {
+            margin-bottom: 20px;
+        }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <br><br>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
+            </div>
+
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                <form name="myform" id="myform" action="" method="POST" role="form" onsubmit="event.preventDefault();display()">
+                    <legend>Personal Information</legend>
+
+
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p>ชื่อ :</p>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <input type="text" name="name" class="form-control" id="" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="spacing"> </div>
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p>นามสกุล :</p>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <input type="text" name="lname" class="form-control" id="" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="spacing"> </div>
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p>วันเดือนปีเกิด :</p>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <input type="date" name="birdate" class="form-control" id="" placeholder="mm/dd/yyy" required>
+                        </div>
+                    </div>
+                    <div class="spacing"> </div>
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p>Gender :</p>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="gender" id="input1/(\w+)/\u\1/g" value="male" required>
+                                    Male
+                                </label> <label>
+                                    <input type="radio" name="gender" id="input1/(\w+)/\u\1/g" value="female" >
+                                    Female
+                                </label> <label>
+                                    <input type="radio" name="gender" id="input1/(\w+)/\u\1/g" value="other" >
+                                    Other
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="spacing"> </div>
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p>Education :</p>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <select name="edu" id="input1/(\w+)/\u\1/g" class="form-control" required>
+                                <option value="" selected disabled>-- Select One --</option>
+                                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                                <option value="ปริญญาโท">ปริญญาโท</option>
+                                <option value="ปริญญาเอก">ปริญญาเอก</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="spacing"> </div>
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p>Phone :</p>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <input name="phone1" type="number" class="form-control" placeholder="" style="width: 25%; float: left" maxlength="3" required>
+                            <p style="float: left; width: 10%;text-align: center"> - </p>
+                            <input name="phone2" type="number" class="form-control" maxlength="7" id="" placeholder="" style="width: 65%;float: left" required>
+                        </div>
+                    </div>
+
+
+                    <div class="spacing"> </div>
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p>Your hobby :</p>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                            <select name="hobby" id="input1/(\w+)/\u\1/g" class="form-control" required>
+                                <option value="" selected disabled>-- Select One --</option>
+                                <option value="shopping">shopping</option>
+                                <option value="Listen to music">Listen to music</option>
+                                <option value="watch tv">watch tv</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="spacing"> </div>
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p>Your Height :</p>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <input type="number" name="height" id="input1/(\w+)/\u\1/g" class="form-control" value="" } maxlength="3" step="" required="required" title="">
+                        </div>
+                    </div>
+                    <div class="spacing"> </div>
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p>Your Weight :</p>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <input type="number" name="weight" id="input1/(\w+)/\u\1/g" class="form-control" value="" } maxlength="3" step="" required="required" title="">
+                        </div>
+                    </div>
+                    <div class="spacing"> </div>
+
+                    <button type="button" class="btn btn-warning btn-block" onclick="showBMI()">Show BMI</button><button type="submit" class="btn btn-primary btn-block">Register now</button>
+                </form>
+
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
+            </div>
+        </div>
+        <div class="spacing"> </div>
+        <div class="spacing"> </div>
+        <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"> </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <div class="result" style="display: none">
+                    <hr>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Display personal's data</h3>
+                        </div>
+                        <div class="panel-body result-data">
+                            <!--//result//-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"> </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+        function display() {
+
+            var fname = document.myform.name.value;
+            var lname = document.myform.lname.value;
+            var birthday = document.myform.birdate.value;
+            var gender = document.myform.gender.value;
+            var edu = document.myform.edu.value;
+            var phone = document.myform.phone1.value;
+            phone = phone.concat(document.myform.phone2.value);
+            var hobby = document.myform.hobby.value;
+            var h = document.myform.height.value;
+            var w = document.myform.weight.value;
+            var bmival = bmi(h, w);
+
+            var res = '<p> Your name: ' + fname + ' ' + lname + '</p>';
+            res += '<p> Birth Date: ' + birthday + '</p>';
+            res += '<p> Hobby: ' + hobby + '</p>';
+            res += '<p> You have BMI = ' + bmival + ' that mean you are <b>' + bmiText(bmival) + '</b></p>';
+            $('.result-data').html(res);
+            $('.result').show();
+        }
+
+        function bmi(h, w) {
+            h = h / 100;
+            var bmi = w / (Math.pow(h, 2));
+            return Math.round(bmi * 100) / 100;
+        }
+
+        function bmiText(val) {
+            if (val < 17) {
+                return 'Thin'
+            } else if (val >= 17 && val <= 25) {
+                return 'Standard'
+            } else {
+                return 'Fat'
+            }
+        }
+
+        function showBMI() {
+
+            var h = document.myform.height.value;
+            var w = document.myform.weight.value;
+            res = '';
+            if (h == "") {
+                res += '<p <b>Please input Height</b></p>';
+            }
+            if (w == "") {
+                res += '<p <b>Please input Weight</b></p>';
+            }
+            if (h != "" && w != "") {
+                var bmival = bmi(h, w);
+
+                res += '<p> You have BMI = ' + bmival + ' that mean you are <b>' + bmiText(bmival) + '</b></p>';
+            }
+
+            $('.result-data').html(res);
+            $('.result').show();
+        }
+    </script>
+</body>
+
+</html>
