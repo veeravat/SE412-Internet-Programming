@@ -40,7 +40,7 @@
 			return round($bmi*100)/100;
 		}
 		$fullname = showname("Veeravat","Jeensuksang");
-		$bmi = bmi(55,173);
+		$bmi = bmi(120,178);
 		echo "<br><p>My name is $fullname </p>";
 		echo "<p>My BMI is $bmi </p><br>";
 
