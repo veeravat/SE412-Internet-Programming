@@ -4,7 +4,7 @@ $con = new stdClass();
 // env pattern //
 // "Database=[dbname];Data Source=[hostname];User Id=[user];Password=[password]"//
 
-$connectionString = getenv("MYSQLCONNSTR_defaultConnection");
+$connectionString = getenv("MYSQLCONNSTR_localdb");
 $varsString = str_replace(";", "&", $connectionString);
 parse_str($varsString);
 
