@@ -1,0 +1,25 @@
+@charset "utf-8";
+ body {font-size:1.3em;
+          font-family:Verdana, Geneva, sans-serif;
+	   margin: 0px;
+	   padding: 0px;
+    } 
+    input{	width:80%;
+	height:45px;
+	border:solid #e1e1e1 1px;
+	border-radius:3px;
+	padding-left:10px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	background:#f9f9f9;
+	transition-duration:0.5s;
+	box-shadow: inset 0px 0px 1px rgba(0,0,0,0.6);}
+    input#submit{margin-left:25%;width:45%;background:#A9CCE3;}
+    form {
+            border:solid #7F8C8D 1px;
+	    border-radius:15px;
+ 	    width: 35%;
+	    margin-top:70px;
+	    margin-left:30%;
+	    padding: 20px 10px 20px 30px;
+    }
