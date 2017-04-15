@@ -8,7 +8,7 @@ $connectionString = getenv("MYSQLCONNSTR_defaultConnection");
 $varsString = str_replace(";", "&", $connectionString);
 parse_str($varsString);
 
-
+echo phpinfo();
 $conn = new mysqli($Data_Source, $User_Id, $Password, $Database);
 if ($conn->connect_errno) {
     echo $conn->connect_error;
