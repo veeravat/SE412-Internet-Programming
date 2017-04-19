@@ -1,7 +1,7 @@
 <?php
     session_start();
-    $ses_userid =$_SESSION[ses_userid];
-    $ses_username = $_SESSION[ses_username];
+    $ses_userid =$_SESSION['ses_userid'];
+    $ses_username = $_SESSION['ses_username'];
     if($ses_userid <> session_id () or  $ses_username ==""){
          echo "<meta charset='utf8'>";
          echo "คุณยังไม่ได้ทำการ Log in";
@@ -9,10 +9,10 @@
      }    
      else 
     {
-       $servername = "localhost";
-       $username = "root";
-       $password = "1234";
-       $dbname = "week14DB";
+   $servername = 'mysql.senseproj.com' ;
+   $username =  'cs319';
+   $password =  'student';
+   $dbname =    'cs319';
 
        // Create connection
       $conn = mysqli_connect($servername, $username, $password, $dbname);
