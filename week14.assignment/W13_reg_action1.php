@@ -37,7 +37,7 @@
       }
       else
       {  //write query string to insert data into user table
-         $sql="insert into user(username,password,fname,lname) values('$name','$pwd','$fname','$lname')";
+         $sql="INSERT INTO user(username,password,fname,lname) values('".$name."','".$pwd."','".$fname."','".$lname."')";
 
          $result = mysqli_query($conn,$sql);
          if($result)
