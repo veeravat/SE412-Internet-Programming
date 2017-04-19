@@ -19,7 +19,7 @@
    
    mysqli_set_charset($conn,"utf8");
    //query for check username is already exist
-   //$sql = "";
+   $sql = "SELECT * from user where username='$name'";
    
    $result = mysqli_query($conn,$sql);
    $num = mysqli_num_rows($result);
@@ -28,7 +28,7 @@
    }
    else
    {  
-      //$sql = "select * from user where ";
+      $sql = "SELECT * from user where fname='$fname' ";
       $result = mysqli_query($conn,$sql);
       $num = mysqli_num_rows($result);
       if ($num > 0)
@@ -37,7 +37,7 @@
       }
       else
       {  //write query string to insert data into user table
-         //$sql="insert into user(,,,) values('','','','')";
+         $sql="insert into user(username,password,fname,lname) values('$name','$pwd','$fname','$lname')";
 
          $result = mysqli_query($conn,$sql);
          if($result)
